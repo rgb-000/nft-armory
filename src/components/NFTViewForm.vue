@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div>
   
 
@@ -14,7 +14,7 @@
           :disabled="isLoading"
           type="submit"
         >
-          Load NFTs
+          Load files
         </button>
         <slot />
       </div>

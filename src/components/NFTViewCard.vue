@@ -1,21 +1,27 @@
 <template>
-    <div v-if="n.metadataExternal.symbol === 'SSUNS' || n.metadataExternal.symbol === 'SUNS'"  class="my-5 nes-container with-title text-xs">
-              <h2 class="title">
-                {{ n.metadataExternal.name }} {{ n.metadataExternal.symbol ? '/' : '' }}
-                {{ n.metadataExternal.symbol }}
-            </h2>
-              <div class="flex flex-row">
-                  <img :alt="n.mint" :src="n.metadataExternal.image" />
-                  <img :alt="n.mint" :src="n.metadataExternal.properties.files[1].uri" />
+    <div v-if="n.metadataExternal.symbol === 'SSUNS' || n.metadataExternal.symbol === 'SUNS'" class="my-5 nes-container with-title text-xs">
+        <h2 class="title">
+            {{ n.metadataExternal.name }} | <a v-bind:href="'https://solscan.io/token/' + n.mint" target="_blank">Explorer &#129133;</a> <a v-bind:href="'https://moonrank.app/collection/solsunsets/' + n.mint" target="_blank">Moonrank &#129133;</a>
 
-                  <div class="ml-5 text-gray-400">
-                  </div>
-              </div>
-    
+        </h2>
+        <div class="flex flex-row">
+            <img :alt="n.mint" :src="n.metadataExternal.image" />
+            <img :alt="n.mint" :src="n.metadataExternal.properties.files[1].uri" />
 
-            <!--modals-->
-
+            <div class="ml-5 text-gray-400">
+            </div>
         </div>
+        <div v-if="fullJSON" class="bg-gray-200 mt-5 copy-father">
+            <button class="nes-btn is-primary copy" @click="doCopyJSON(n)">
+                {{ copyText }}
+            </button>
+            <vue-json-pretty class="text-xs" :data="stringifyPubkeysAndBNsInObject(n)"></vue-json-pretty>
+        </div>
+
+
+        <!--modals-->
+
+    </div>
 </template>
 
 <script lang="ts">

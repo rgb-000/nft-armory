@@ -2,7 +2,7 @@
   <div class="flex justify-center mb-10">
      <div class="nes-select is-dark flex-1">
       <select required id="wallet" v-model="chosenWallet">
-        <option class="text-gray-500" :value="null">Choose wallet..</option>
+        <option class="text-gray-500" :value="null">Connect wallet..</option>
         <option :value="WalletName.Phantom">Phantom</option>
         <option :value="WalletName.Sollet">Sollet</option>
         <option :value="WalletName.SolletExtension">Sollet Extension</option>
