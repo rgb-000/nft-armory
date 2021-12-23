@@ -1,12 +1,14 @@
 <template>
     <div>
 
-        <div class="intro">            <i>
-                <a href="https://solsunsets.com//" style="text-decoration:underline; font-weight:700;">&#8592; home</a> Here you can access all images from our multi assets NFT.
-            </i></div>
+        <div class="intro">
+            <a href="https://solsunsets.com//" style="text-decoration:none; font-size:1.05em;"><b>&#x2C2; Home</b></a> &nbsp;<i>
+                Here you can access all images from our multi assets NFT.
+            </i>
+        </div>
             <!--all the config stuff-->
         <div class="connect">
-            <ConfigPane />
+            <a href="https://solsunsets.com//" style="text-decoration:none; font-weight:700;">&#x2C2; Gallery</a>
             <NFTViewForm :is-loading="isLoading" @submit-form="handleSubmitForm">
             </NFTViewForm>
         </div>
