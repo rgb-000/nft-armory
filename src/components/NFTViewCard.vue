@@ -1,6 +1,6 @@
 <template>
 
-    <div v-if="n.metadataExternal.symbol === 'SUNSH'" class="my-5 nes-container with-title text-xs">
+    <div v-if="n.metadataExternal.symbol == 'SSUNSH' || n.metadataExternal.symbol == 'SUNS' || n.metadataExternal.symbol == 'SSUNS'" class="my-5 nes-container with-title text-xs">
         <h2 class="title">
             {{ n.metadataExternal.name }} | <a v-bind:href="'https://gallery.solsunsets.com/view/mint/' + n.mint" target="_blank">Share &#129133;</a>&nbsp;<a v-bind:href="'https://solscan.io/token/' + n.mint" target="_blank">Explorer &#129133;</a>&nbsp;<a v-bind:href="'https://moonrank.app/collection/solsunsets/' + n.mint" target="_blank">Moonrank &#129133;</a>
 
@@ -14,34 +14,8 @@
         </div>
 
     </div>
-    <div v-if="n.metadataExternal.symbol === 'SSUNS'" class="my-5 nes-container with-title text-xs">
-        <h2 class="title">
-            {{ n.metadataExternal.name }} | <a v-bind:href="'https://gallery.solsunsets.com/view/mint/' + n.mint" target="_blank">Share &#129133;</a>&nbsp;<a v-bind:href="'https://solscan.io/token/' + n.mint" target="_blank">Explorer &#129133;</a>&nbsp;<a v-bind:href="'https://moonrank.app/collection/solsunsets/' + n.mint" target="_blank">Moonrank &#129133;</a>
+   
 
-        </h2>
-        <div class="flex flex-row">
-            <img :alt="n.mint" :src="n.metadataExternal.image" />
-            <img :alt="n.mint" :src="n.metadataExternal.properties.files[1].uri" />
-
-            <div class="ml-5 text-gray-400">
-            </div>
-        </div>
-
-    </div>
-    <div v-if="n.metadataExternal.symbol === 'SUNS'" class="my-5 nes-container with-title text-xs">
-        <h2 class="title">
-            {{ n.metadataExternal.name }} | <a v-bind:href="'https://gallery.solsunsets.com/view/mint/' + n.mint" target="_blank">Share &#129133;</a>&nbsp;<a v-bind:href="'https://solscan.io/token/' + n.mint" target="_blank">Explorer &#129133;</a>&nbsp;<a v-bind:href="'https://moonrank.app/collection/solsunsets/' + n.mint" target="_blank">Moonrank &#129133;</a>
-
-        </h2>
-        <div class="flex flex-row">
-            <img :alt="n.mint" :src="n.metadataExternal.image" />
-            <img :alt="n.mint" :src="n.metadataExternal.properties.files[1].uri" />
-
-            <div class="ml-5 text-gray-400">
-            </div>
-        </div>
-
-    </div>
 </template>
 
 <script lang="ts">
