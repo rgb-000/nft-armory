@@ -1,33 +1,31 @@
 <template>
     <div>
 
-        <div class="intro">
-            <i>
+        <div class="intro">            <i>
                 <a href="https://solsunsets.com//" style="text-decoration:underline; font-weight:700;">&#8592; home</a> Here you can access all images from our multi assets NFT.
-            </i>
-        </div>
-        <!--all the config stuff-->
+            </i></div>
+            <!--all the config stuff-->
         <div class="connect">
             <ConfigPane />
             <NFTViewForm :is-loading="isLoading" @submit-form="handleSubmitForm">
             </NFTViewForm>
         </div>
-        <!--per NFT display-->
-        <LoadingBar v-if="isLoading" :progress="progress" :text="text" class="my-5" />
-        <NotifyError v-else-if="isError" class="mt-5">{{ text }}</NotifyError>
-        <div v-else>
-            <NFTViewCard v-for="n in NFTs" :key="n.mint" :n="n"></NFTViewCard>
-        </div>
+            <!--per NFT display-->
+            <LoadingBar v-if="isLoading" :progress="progress" :text="text" class="my-5" />
+            <NotifyError v-else-if="isError" class="mt-5">{{ text }}</NotifyError>
+            <div v-else>
+                <NFTViewCard v-for="n in NFTs" :key="n.mint" :n="n"></NFTViewCard>
+            </div>
 
-        <!--modals-->
-        <!--must sit at the very bottom-->
-        <div class="infinite-loading">
-            <infinite-loading style="color:black;" @infinite="infiniteHandler"
-                              :identifier="
+            <!--modals-->
+            <!--must sit at the very bottom-->
+            <div class="infinite-loading">
+                <infinite-loading style="color:black;" @infinite="infiniteHandler"
+                                  :identifier="
         +new Date() //needs to be something thta dynamically updates, or won't work
       "
-                              spinner="spiral"></infinite-loading>
-        </div>
+                                  spinner="spiral"></infinite-loading>
+            </div>
     </div>
 </template>
 
@@ -215,8 +213,7 @@
     });
 </script>
 
-<style>
-    -
+<style>-
     /*temp hackaround...*/
     .infinite-status-prompt {
         @apply text-black !important;
