@@ -1,7 +1,7 @@
 <template>
     <div v-if="n.metadataExternal.symbol === 'SSUNS' || n.metadataExternal.symbol === 'SUNS'" class="my-5 nes-container with-title text-xs">
         <h2 class="title">
-            {{ n.metadataExternal.name }} | <a v-bind:href="'https://solscan.io/token/' + n.mint" target="_blank">Explorer &#129133;</a>&nbsp;<a v-bind:href="'https://moonrank.app/collection/solsunsets/' + n.mint" target="_blank">Moonrank &#129133;</a>  
+            {{ n.metadataExternal.name }} | <a v-bind:href="'https://gallery.solsunsets.com/view/mint/' + n.mint" target="_blank">Share &#129133;</a>&nbsp;<a v-bind:href="'https://solscan.io/token/' + n.mint" target="_blank">Explorer &#129133;</a>&nbsp;<a v-bind:href="'https://moonrank.app/collection/solsunsets/' + n.mint" target="_blank">Moonrank &#129133;</a>
 
         </h2>
         <div class="flex flex-row">

@@ -2,15 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\css",
-    "\\node_modules\\@vueuse",
-    "\\node_modules\\@vueuse\\core",
-    "\\node_modules\\@vueuse\\core\\node_modules",
-    "\\node_modules\\vue-loader-v16\\dist",
-    "\\node_modules\\vue-loader-v16\\node_modules",
+    "\\public",
     "\\public\\css",
-    "\\src",
-    "\\src\\composables"
+    "\\src\\composables",
+    "\\src\\views"
   ],
-  "SelectedNode": "\\src\\composables\\loading.ts",
+  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }
