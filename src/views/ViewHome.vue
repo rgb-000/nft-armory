@@ -1,15 +1,15 @@
 <template>
     <div>
 
-        <div style="text-align:center;">            <i>
-                <a href="https://solsunsets.com//" style="text-decoration:underline; font-weight:700;">&#8592; home</a> In our gallery you can access all images from our multi assets NFT.
+        <div class="intro">            <i>
+                <a href="https://solsunsets.com//" style="text-decoration:underline; font-weight:700;">&#8592; home</a> Here you can access all images from our multi assets NFT.
             </i></div>
             <!--all the config stuff-->
+        <div class="connect">
             <ConfigPane />
             <NFTViewForm :is-loading="isLoading" @submit-form="handleSubmitForm">
-
             </NFTViewForm>
-
+        </div>
             <!--per NFT display-->
             <LoadingBar v-if="isLoading" :progress="progress" :text="text" class="my-5" />
             <NotifyError v-else-if="isError" class="mt-5">{{ text }}</NotifyError>

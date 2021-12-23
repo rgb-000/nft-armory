@@ -1,35 +1,15 @@
 ﻿<template>
-  <div>
-  
-
-
-
-    <form @submit.prevent="emitSubmitForm" :class="chosenMethod === 'creator' ? 'mt-5' : 'mt-10'">
-      
-
-      <div class="flex justify-between mt-5">
-        <button
-          class="nes-btn is-primary"
-          :class="{ 'is-disabled': isLoading }"
-          :disabled="isLoading"
-          type="submit"
-        >
-          Load files
-        </button>
+     <form @submit.prevent="emitSubmitForm" :class="chosenMethod === 'creator' ? 'mt-5' : 'mt-10'">
+         <button class="nes-btn is-primary"
+                 :class="{ 'is-disabled': isLoading }"
+                 :disabled="isLoading"
+                 type="submit">
+             Load files &nbsp;<b>&#707;</b>
+         </button>
         <slot />
-      </div>
     </form>
-
     <NotifyError v-if="error" class="mt-5"> Uh oh something went wrong - {{ error }}</NotifyError>
-
-    <ModalWindow
-      v-if="isModalVisible('tooltipCreator')"
-      title="What's a creator?"
-      @hide-modal="hideModal('tooltipCreator')"
-    >
-      <ContentTooltipCreator />
-    </ModalWindow>
-  </div>
+  
 </template>
 
 <script lang="ts">
