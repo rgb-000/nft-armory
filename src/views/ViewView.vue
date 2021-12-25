@@ -8,7 +8,7 @@
         </div>
             <!--all the config stuff-->
         <div class="connect">
-            <a href="https://solsunsets.com//" style="text-decoration:none; font-weight:700;">&#x2C2; Gallery</a>
+            <a href="https://gallery.solsunsets.com/" style="text-decoration:none; font-weight:700;">&#x2C2; Gallery</a>
             <NFTViewForm :is-loading="isLoading" @submit-form="handleSubmitForm">
             </NFTViewForm>
         </div>
