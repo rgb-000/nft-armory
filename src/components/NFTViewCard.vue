@@ -7,7 +7,6 @@
 
         </h2>
         <div class="flex flex-row">
-            <img :alt="n.mint" :src="n.metadataExternal.image" />
             <img :alt="n.mint" :src="n.metadataExternal.properties.files[1].uri" />
 
             <div class="ml-5 text-gray-400">

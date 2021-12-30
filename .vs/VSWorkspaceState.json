@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css",
-    "\\public\\css",
-    "\\src\\composables",
-    "\\src\\views"
+    "\\css"
   ],
-  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }

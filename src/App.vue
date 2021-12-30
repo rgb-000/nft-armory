@@ -17,7 +17,7 @@
 
 <style>
 * {
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'Source Sans Pro', monospace;
 }
 input[type='radio']:checked + span {
   @apply text-black;
