@@ -1,103 +1,111 @@
 <template>
     <div>
-      
-            <div class="sfooter desk">
 
-                Solsunsets&copy; 2022 | Powered by <a alt="home" href="https://solsunsets.com">
-                    <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-sln.svg" class="logo-sln"></object>
+        <div class="sfooter desk">
+
+            Solsunsets&copy; 2022 | Powered by <a alt="home" href="https://solsunsets.com">
+                <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-sln.svg" class="logo-sln"></object>
+            </a>
+        </div>
+
+
+        <div class="blog">
+
+            <div class="logo">
+                <a href="https://solsunsets.com">
+                    <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-ss-m.svg" class="logo-ss"></object>
                 </a>
             </div>
+            <div class="blog-header-container">
+                <div class="blog-intro desk">
+                    <div class="logo-links">
 
-
-            <div class="blog">
-
-                <div class="logo">
-                    <a href="https://solsunsets.com">
-                        <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-ss-m.svg" class="logo-ss"></object>
-                    </a>
-                </div>
-                <div class="blog-header-container">
-                    <div class="blog-intro">
-                        <div class="logo-links">
-
-                            <a alt="home" href="https://solsunsets.com">
-                                <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/home.svg" class="logo-twitter mob"></object>
-                            </a>
-                            <a href="https://twitter.com/solsunsets">
-                                <object href="https://twitter.com/solsunsets" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-ttr.svg" class="logo-twitter"></object>
-                            </a><a href="https://discord.gg/RNSRHaxzbR">
-                                <object href="https://discord.gg/RNSRHaxzbR" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-dsc.svg" class="logo-discord"></object>
-                            </a><a href="https://docs.solsunsets.com">
-                                <object href="https://docs.solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-gtb.svg" class="logo-discord"></object>
-                            </a>
-                            <a href="https://www.magiceden.io/marketplace/solsunsets">
-                                <object href="https://www.magiceden.io/marketplace/solsunsets" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-me.svg" class="logo-discord"></object>
-                            </a>
-
-
-                        </div>
-                        <span class="desk">Solsunsets is a NFT collection of moody sunset landscapes running on the Solana chain. The nostalgic style is inspired by the aesthetics of popular culture, jazz fusion and lounge music, technology and advertising from the 1980s. All Solsunsets come in two sizes: 1:1 (square) and 3:1 ratio (banner).</span>
-
-                    </div>
-
-                </div>
-                <div class="blog-part">
-
-                    <div class="blog-right">
-                        <div class="intro">
-                            <i>
-                                Here you can access all banners from our multi assets NFT.
-                            </i>
-                        </div>
-                        <!--all the config stuff-->
-                        <div class="connect">
-                            <ConfigPane />
-                            <NFTViewForm :is-loading="isLoading" @submit-form="handleSubmitForm">
-                            </NFTViewForm>
-                        </div>
+                        <a alt="home" href="https://solsunsets.com">
+                            <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/home.svg" class="logo-twitter mob"></object>
+                        </a>
+                        <a href="https://twitter.com/solsunsets">
+                            <object href="https://twitter.com/solsunsets" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-ttr.svg" class="logo-twitter"></object>
+                        </a><a href="https://discord.gg/RNSRHaxzbR">
+                            <object href="https://discord.gg/RNSRHaxzbR" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-dsc.svg" class="logo-discord"></object>
+                        </a><a href="https://docs.solsunsets.com">
+                            <object href="https://docs.solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-gtb.svg" class="logo-discord"></object>
+                        </a>
+                        <a href="https://www.magiceden.io/marketplace/solsunsets">
+                            <object href="https://www.magiceden.io/marketplace/solsunsets" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-me.svg" class="logo-discord"></object>
+                        </a>
 
 
                     </div>
+                    <span class="desk">Solsunsets is a NFT collection of moody sunset landscapes running on the Solana chain. The nostalgic style is inspired by the aesthetics of popular culture, jazz fusion and lounge music, technology and advertising from the 1980s. All Solsunsets come in two sizes: 1:1 (square) and 3:1 ratio (banner).</span>
 
                 </div>
-                <div id="menu" class="blog-part">
 
-                    <div class="blog-right-title-container"></div>
-                    <div class="bbutton"><a class="cyan" href="https://gallery.solsunsets.com/">SOLSUNSETS BANNERS</a></div>
-                    <div class="bbutton desk"><a class="cyan" href="https://solsunsets.com/memorial">SOLSUNSETS MEMORIAL</a></div>
-                    <div class="bbutton"><a class="cyan" href="https://up.solsunsets.com/">PIXEL ART UPSCALE TOOL</a></div>
-                    <div class="bbutton">MARKETS: <a class="cyan" href="https://www.magiceden.io/marketplace/solsunsets">MAGICEDEN<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a href="https://alpha.art/collection/solsunsets/">ALPHA.ART<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a></div>
-                    <div class="bbutton desk">
-                        AUCTIONS SERIES:
-                        <a class="cyan" href="https://suns.holaplex.com/listings?view=ended">HOLAPLEX <object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>
+            </div>
+            <div class="blog-part">
+
+                <div class="blog-right">
+                    <div class="intro">
+                        <div class="mob">
+                            <a class="nav-link" href="https://solsunsets.com">
+                                <b>
+                                    <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/arrow.svg" class="logo-rotate"></object>HOME
+                                </b>
+                            </a>
+
+                        </div>
+                        <i>
+                            Here you can access all your Solsunsets banners from your wallet.
+                        </i>
+                    </div>
+                    <!--all the config stuff-->
+                    <div class="connect">
+                        <ConfigPane />
+                        <NFTViewForm :is-loading="isLoading" @submit-form="handleSubmitForm">
+                        </NFTViewForm>
                     </div>
 
-                    <div class="bbutton desk">RARITY: <a class="cyan" href="https://moonrank.app/collection/solsunsets">MOONRANK<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a class="cyan" href="https://howrare.is/solsunsets">HOWRARE<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>  </div>
-
 
                 </div>
+
+            </div>
+            <div id="menu" class="blog-part desk">
+
+                <div class="blog-right-title-container"></div>
+                <div class="bbutton"><a class="cyan" href="https://gallery.solsunsets.com/">SOLSUNSETS BANNERS</a></div>
+                <div class="bbutton desk"><a class="cyan" href="https://solsunsets.com/memorial">SOLSUNSETS MEMORIAL</a></div>
+                <div class="bbutton"><a class="cyan" href="https://up.solsunsets.com/">PIXEL ART UPSCALE TOOL</a></div>
+                <div class="bbutton">MARKETS: <a class="cyan" href="https://www.magiceden.io/marketplace/solsunsets">MAGICEDEN<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a href="https://alpha.art/collection/solsunsets/">ALPHA.ART<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a></div>
+                <div class="bbutton desk">
+                    AUCTIONS SERIES:
+                    <a class="cyan" href="https://suns.holaplex.com/listings?view=ended">HOLAPLEX <object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>
+                </div>
+
+                <div class="bbutton desk">RARITY: <a class="cyan" href="https://moonrank.app/collection/solsunsets">MOONRANK<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a class="cyan" href="https://howrare.is/solsunsets">HOWRARE<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>  </div>
 
 
             </div>
 
 
+        </div>
 
-    <!--per NFT display-->
-    <LoadingBar v-if="isLoading" :progress="progress" :text="text" class="my-5" />
-    <NotifyError v-else-if="isError" class="mt-5">{{ text }}</NotifyError>
-    <div v-else>
-        <NFTViewCard v-for="n in NFTs" :key="n.mint" :n="n"></NFTViewCard>
-    </div>
 
-    <!--modals-->
-    <!--must sit at the very bottom-->
-    <div class="infinite-loading">
-        <infinite-loading style="color:black;" @infinite="infiniteHandler"
-                          :identifier="
+
+        <!--per NFT display-->
+        <LoadingBar v-if="isLoading" :progress="progress" :text="text" class="my-5" />
+        <NotifyError v-else-if="isError" class="mt-5">{{ text }}</NotifyError>
+        <div v-else>
+            <NFTViewCard v-for="n in NFTs" :key="n.mint" :n="n"></NFTViewCard>
+        </div>
+
+        <!--modals-->
+        <!--must sit at the very bottom-->
+        <div class="infinite-loading">
+            <infinite-loading style="color:black;" @infinite="infiniteHandler"
+                              :identifier="
         +new Date() //needs to be something thta dynamically updates, or won't work
       "
-                          spinner="spiral"></infinite-loading>
-    </div>
+                              spinner="spiral"></infinite-loading>
+        </div>
     </div>
 </template>
 
@@ -285,7 +293,8 @@
     });
 </script>
 
-<style>-
+<style>
+    -
     /*temp hackaround...*/
     .infinite-status-prompt {
         @apply text-white !important;

@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css",
     "\\public",
+    "\\public\\js",
     "\\src",
     "\\src\\views"
   ],
-  "SelectedNode": "\\public\\logo-slate",
+  "SelectedNode": "\\src\\main.ts",
   "PreviewInSolutionExplorer": false
 }
