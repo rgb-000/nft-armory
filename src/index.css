@@ -564,24 +564,24 @@ a {
     }
 
     .blog {
-        max-height: calc(80vh - 100vw);
-        display: block;
+        max-height: 30vh;
+        display: contents;
         overflow-x: hidden;
         overflow-y: scroll;
         position: fixed;
-        top: calc(100vw + 20vh);
+        top: -15vh;
     }
 
     .blog-intro {
-        height: auto;
-        padding-bottom: 2vh;
+        height: 0;
+        margin-bottom: -15vh;
     }
 
     .blog-right {
-        border-top: 3px solid #2f4f4f;
-        padding-top: 2vh;
-        margin-bottom: 2vh;
-        padding-bottom: 2vh;
+        border-top: 0px solid #2f4f4f;
+        padding-top: 0vh;
+        margin-bottom: 0vh;
+        padding-bottom: 0vh;
     }
 
     .logo {
