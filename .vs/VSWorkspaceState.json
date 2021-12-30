@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css"
+    "\\css",
+    "\\public",
+    "\\src",
+    "\\src\\views"
   ],
+  "SelectedNode": "\\public\\logo-slate",
   "PreviewInSolutionExplorer": false
 }
