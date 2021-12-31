@@ -127,7 +127,7 @@ body {
     overflow: hidden;
     grid-template-columns: 12% 22% 22% 22% 22%;
     grid-template-rows: 100%;
-    width: 98vw;
+    width: 96vw;
     margin-left: 1vw;
     margin-right: 1vw;
     position: relative;
@@ -861,11 +861,10 @@ img {
 
 progress {
     position:relative;
-    width: 40vw;
+    width: 96vw;
     background-color: cyan;
     filter: sepia(1);
-    margin-left: 33.6vw;
-    max-height: 12px;
+    max-height: 3px;
     margin-top: -380px;
 }
 
