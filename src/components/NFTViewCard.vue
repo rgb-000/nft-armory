@@ -3,7 +3,7 @@
 
     <div v-if="n.metadataExternal.symbol === 'SSUNSH' || n.metadataExternal.symbol === 'SUNS' || n.metadataExternal.symbol === 'SSUNS'" class="my-5 nes-container with-title text-xs">
         <h2 class="title">
-            {{ n.metadataExternal.name }} | <a v-bind:href="'https://gallery.solsunsets.com/view/mint/' + n.mint" target="_blank">Share <object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>&nbsp;<a v-bind:href="'https://solscan.io/token/' + n.mint" target="_blank">Explorer <object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>&nbsp;<a v-if="n.metadataExternal.symbol === 'SSUNS'" v-bind:href="'https://moonrank.app/collection/solsunsets/' + n.mint" target="_blank">Moonrank <object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>
+            {{ n.metadataExternal.name }} | <a v-bind:href="'https://gallery.solsunsets.com/view/mint/' + n.mint" target="_blank">Share <object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>&nbsp;<a v-bind:href="'https://solscan.io/token/' + n.mint" target="_blank">Explorer <object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>&nbsp;<a v-if="n.metadataExternal.symbol === 'SSUNS'" v-bind:href="'https://moonrank.app/collection/solsunsets/' + n.mint" target="_blank">Moonrank <object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>
 
         </h2>
         <div class="flex flex-row">

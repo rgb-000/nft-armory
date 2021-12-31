@@ -4,7 +4,7 @@
         <div class="sfooter desk">
 
             Solsunsets&copy; 2022 | Powered by <a alt="home" href="https://solsunsets.com">
-                <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-sln.svg" class="logo-sln"></object>
+                <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo/logo-sln.svg" class="logo-sln"></object>
             </a>
         </div>
 
@@ -13,7 +13,7 @@
 
             <div class="logo">
                 <a href="https://solsunsets.com">
-                    <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-ss-m.svg" class="logo-ss"></object>
+                    <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo/logo-ss-m.svg" class="logo-ss"></object>
                 </a>
             </div>
             <div class="blog-header-container">
@@ -21,22 +21,22 @@
                     <div class="logo-links">
 
                         <a alt="home" href="https://solsunsets.com">
-                            <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/home.svg" class="logo-twitter mob"></object>
+                            <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo/home.svg" class="logo-twitter mob"></object>
                         </a>
                         <a href="https://twitter.com/solsunsets">
-                            <object href="https://twitter.com/solsunsets" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-ttr.svg" class="logo-twitter"></object>
+                            <object href="https://twitter.com/solsunsets" id="svg1" data="https://solsunsets.com/img/logo/logo-ttr.svg" class="logo-twitter"></object>
                         </a><a href="https://discord.gg/RNSRHaxzbR">
-                            <object href="https://discord.gg/RNSRHaxzbR" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-dsc.svg" class="logo-discord"></object>
+                            <object href="https://discord.gg/RNSRHaxzbR" id="svg1" data="https://solsunsets.com/img/logo/logo-dsc.svg" class="logo-discord"></object>
                         </a><a href="https://docs.solsunsets.com">
-                            <object href="https://docs.solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-gtb.svg" class="logo-discord"></object>
+                            <object href="https://docs.solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo/logo-gtb.svg" class="logo-discord"></object>
                         </a>
                         <a href="https://www.magiceden.io/marketplace/solsunsets">
-                            <object href="https://www.magiceden.io/marketplace/solsunsets" id="svg1" data="https://solsunsets.com/img/logo-slate/logo-me.svg" class="logo-discord"></object>
+                            <object href="https://www.magiceden.io/marketplace/solsunsets" id="svg1" data="https://solsunsets.com/img/logo/logo-me.svg" class="logo-discord"></object>
                         </a>
 
 
                     </div>
-                    <span>Solsunsets is an Art Collection of 4,444 generative landscapes running on the Solana chain inspired by the aesthetics of popular culture, nostalgic childhood memories, obsolete technologies and jazz fusion music from the 1980s. <br />A total of 112 handcrafted attributes are distributed in 8 layers. The different skies, suns, clouds, grounds, horizons, and objects combined can reach up to 1,33B landscape variations. From this universe, 4,444 striking and unique art pieces were generated. A project created by <a href="https://twitter.com/rgb0x00">@rgb0x00<object id="svg1" data="/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a></span>
+                    <span>Solsunsets is an Art Collection of 4,444 generative landscapes running on the Solana chain inspired by the aesthetics of popular culture, nostalgic childhood memories, obsolete technologies and jazz fusion music from the 1980s. <br />A total of 112 handcrafted attributes are distributed in 8 layers. The different skies, suns, clouds, grounds, horizons, and objects combined can reach up to 1,33B landscape variations. From this universe, 4,444 striking and unique art pieces were generated. A project created by <a href="https://twitter.com/rgb0x00">@rgb0x00<object id="svg1" data="/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a></span>
 
                 </div>
 
@@ -48,7 +48,7 @@
                         <div class="mob">
                             <a class="nav-link" href="https://solsunsets.com">
                                 <b>
-                                    <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo-slate/arrow.svg" class="logo-rotate"></object>HOME
+                                    <object href="https://solsunsets.com" id="svg1" data="https://solsunsets.com/img/logo/arrow.svg" class="logo-rotate"></object>HOME
                                 </b>
                             </a>
 
@@ -74,13 +74,13 @@
                 <div class="bbutton"><a class="cyan" href="https://gallery.solsunsets.com/">SOLSUNSETS BANNERS</a></div>
                 <div class="bbutton desk"><a class="cyan" href="https://solsunsets.com/memorial">SOLSUNSETS MEMORIAL</a></div>
                 <div class="bbutton"><a class="cyan" href="https://up.solsunsets.com/">PIXEL ART UPSCALE TOOL</a></div>
-                <div class="bbutton">MARKETS: <a class="cyan" href="https://www.magiceden.io/marketplace/solsunsets">MAGICEDEN<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a href="https://alpha.art/collection/solsunsets/">ALPHA.ART<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a></div>
+                <div class="bbutton">MARKETS: <a class="cyan" href="https://www.magiceden.io/marketplace/solsunsets">MAGICEDEN<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a href="https://alpha.art/collection/solsunsets/">ALPHA.ART<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a></div>
                 <div class="bbutton desk">
                     AUCTIONS SERIES:
-                    <a class="cyan" href="https://suns.holaplex.com/listings?view=ended">HOLAPLEX <object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>
+                    <a class="cyan" href="https://suns.holaplex.com/listings?view=ended">HOLAPLEX <object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>
                 </div>
 
-                <div class="bbutton desk">RARITY: <a class="cyan" href="https://moonrank.app/collection/solsunsets">MOONRANK<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a class="cyan" href="https://howrare.is/solsunsets">HOWRARE<object id="svg1" data="https://solsunsets.com/img/logo-slate/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>  </div>
+                <div class="bbutton desk">RARITY: <a class="cyan" href="https://moonrank.app/collection/solsunsets">MOONRANK<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a class="cyan" href="https://howrare.is/solsunsets">HOWRARE<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>  </div>
 
 
             </div>
