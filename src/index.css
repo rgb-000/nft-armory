@@ -878,6 +878,7 @@ progress {
 
 .blog {
     grid-template-columns: 12% 22% 44% 22% !important;
+    min-height:180px;
 }
 
 .p-10 {
