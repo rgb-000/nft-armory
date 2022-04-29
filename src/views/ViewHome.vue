@@ -47,6 +47,7 @@
 
                 <div class="blog-right">
                     <div class="intro">
+
                         <div class="mob">
                             <a class="nav-link" href="https://solsunsets.com">
                                 <b>
@@ -55,9 +56,11 @@
                             </a>
 
                         </div>
-                        <i>
-                            Here you can access all your Solsunsets banners from your wallet.
-                        </i>
+                        <h1>Access your Banners!</h1>
+
+                        Here you can access all Solsunsets banners from your wallet. <br />
+                        You can also view any Solsunset banner right through the
+                        https://gallery.solsunsets.com/view/mint/ adding the token/mint address at the end of the URL (the same from MagicEden item details).
                     </div>
                     <!--all the config stuff-->
                     <div class="connect">
@@ -73,16 +76,16 @@
             <div id="menu" class="blog-part desk">
 
                 <div class="blog-right-title-container"></div>
-                <div class="bbutton"><a class="cyan" href="https://gallery.solsunsets.com/">SOLSUNSETS BANNERS</a></div>
-                <div class="bbutton desk"><a class="cyan" href="https://solsunsets.com/memorial">SOLSUNSETS MEMORIAL</a></div>
-                <div class="bbutton"><a class="cyan" href="https://up.solsunsets.com/">PIXEL ART UPSCALE TOOL</a></div>
-                <div class="bbutton">MARKETS: <a class="cyan" href="https://www.magiceden.io/marketplace/solsunsets">MAGICEDEN<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a href="https://alpha.art/collection/solsunsets/">ALPHA.ART<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a></div>
+                <div class="bbutton"><a class="cyan" href="https://gallery.solsunsets.com/">Solsunsets Banners</a></div>
+                <div class="bbutton desk"><a class="cyan" href="/">Pixels Claim (soon)</a></div>
+                <div class="bbutton desk"><a class="cyan" href="https://up.solsunsets.com/">Pixel Art Upscale Tool</a></div>
+                <div class="bbutton">Markets: <a class="cyan" href="https://www.magiceden.io/marketplace/solsunsets">MagicEden<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a href="https://alpha.art/collection/solsunsets/">Alpha.Art<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a></div>
                 <div class="bbutton desk">
-                    AUCTIONS SERIES:
-                    <a class="cyan" href="https://suns.holaplex.com/listings?view=ended">HOLAPLEX <object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>
+                    Sci-fi Series:
+                    <a class="cyan" href="https://exchange.art/collections/Solsunsets%20Sci-Fi%20Series">Exchange.Art<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>
                 </div>
 
-                <div class="bbutton desk">RARITY: <a class="cyan" href="https://moonrank.app/collection/solsunsets">MOONRANK<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a class="cyan" href="https://howrare.is/solsunsets">HOWRARE<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>  </div>
+                <div class="bbutton desk">Rarity: <a class="cyan" href="https://moonrank.app/collection/solsunsets">Moonrank<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a class="cyan" href="https://howrare.is/solsunsets">Howrare<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a>  </div>
 
 
             </div>

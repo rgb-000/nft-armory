@@ -18,10 +18,10 @@ a {
 body {
     background-color: #fff9ea;
     display: flex;
-    font-family: "Source Sans Pro", monospace, Helvetica, sans-serif;
+    font-family: /*"Source Sans Pro",*/ "Roboto Mono", monospace, Helvetica, sans-serif;
     flex-direction: column;
     width: 100%;
-    font-size: 1em;
+    font-size: 0.8em;
     z-index: 10;
     font-weight: 400;
     color: #000001;
@@ -111,13 +111,9 @@ body {
 }
 
 .bbutton {
-    position: relative;
-    height: 100%;
-    width: 100%;
     border-bottom: 3px solid #000001;
-    letter-spacing: 0.3px;
     text-decoration: none;
-    padding-bottom: 8px;
+    padding-bottom: 11px;
 }
 
 .blog {
@@ -280,7 +276,8 @@ a:hover {
 .blog-right {
     overflow: auto;
     text-align: left;
-    height: 100%;
+    height: 240px;
+    display: contents;
 }
 
     .blog-right .rounded {
@@ -302,12 +299,14 @@ a:hover {
     border-top: 3px solid #000001;
     border-bottom: 3px solid #000001;
     width: 19.5vw;
-    padding-top: 8px;
     height: 43px;
     position: absolute;
     background-color: #fff9ea;
+    display: inline-grid;
+    align-content: center;
+    align-items: center;
+    justify-items: start;
 }
-
 .blog-right-title-container {
     display: flex;
     align-items: center;
@@ -886,8 +885,10 @@ progress {
 }
 
 .intro {
-    margin-top: 164px
+    margin-top: 0px
 }
+h1 {margin-top:0px;}
+
 .connect {
     display: inline-flex;
     padding-top: 15px;
@@ -901,7 +902,22 @@ progress {
     justify-content: space-between;
     align-items: baseline;
 }
+#wallet, .nes-btn {
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    height: 40px;
+    background-color: #ddbe58 !important;
+    border: 0 !important;
+    color: #000 !important;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    border-radius: 4px;
+    min-width: 100%;
+    padding: 8px 20px;
+}
 
+select {padding-right:20px;}
 
 .connect-b {
     padding-top: 223px;
