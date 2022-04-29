@@ -307,6 +307,7 @@ a:hover {
     align-items: center;
     justify-items: start;
 }
+
 .blog-right-title-container {
     display: flex;
     align-items: center;
@@ -361,7 +362,7 @@ a {
 
 
 .myimg {
-    max-width: 96vw;
+    max-width: 72vw;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -370,7 +371,7 @@ a {
 
 
 .content, .content-m {
-    width: 96vw;
+    width: 72vw;
     margin-left: 2vw;
     margin-right: 2vw;
     height: calc(96vw / 3);
@@ -841,13 +842,14 @@ li.nav-item.last {
 
 /*////////////ARMORY///////*/
 
-h2 {font-size:1.0em;
-    font-weight:600;
+h2 {
+    font-size: 1.0em;
+    font-weight: 600;
 }
 
 img {
-    min-width: 96vw;
-    max-width: 96vw;
+    min-width: 72vw;
+    max-width: 72vw;
     max-height: 32vw !important;
 }
 
@@ -856,10 +858,11 @@ img {
 }
 
 
-.pfp {}
+.pfp {
+}
 
 progress {
-    position:relative;
+    position: relative;
     width: 96vw;
     background-color: cyan;
     filter: sepia(1);
@@ -887,7 +890,10 @@ progress {
 .intro {
     margin-top: 0px
 }
-h1 {margin-top:0px;}
+
+h1 {
+    margin-top: 0px;
+}
 
 .connect {
     display: inline-flex;
@@ -902,6 +908,7 @@ h1 {margin-top:0px;}
     justify-content: space-between;
     align-items: baseline;
 }
+
 #wallet, .nes-btn {
     font-family: monospace;
     font-weight: 600;
@@ -917,7 +924,9 @@ h1 {margin-top:0px;}
     padding: 8px 20px;
 }
 
-select {padding-right:20px;}
+select {
+    padding-right: 20px;
+}
 
 .connect-b {
     padding-top: 223px;
@@ -931,33 +940,59 @@ select {padding-right:20px;}
     align-items: baseline;
     padding-bottom: 10px;
 }
+
 .logo-rotate {
-left: 0;
-height:24px;
-margin-bottom:-7px;
-transform: rotate(-180deg);
+    left: 0;
+    height: 24px;
+    margin-bottom: -7px;
+    transform: rotate(-180deg);
 }
 
+img {
+    max-width: 64vw !important;
+}
+
+.nes-container {
+    max-width:64vw;
+    padding:3vw 13vw;
+}
+
+.back_gallery {
+    font-size: 16px;
+    position: absolute;
+}
+.material-symbols-outlined {
+    margin-bottom:-5px !important;
+}
 
 @media all and (orientation: portrait) {
     .intro {
         margin-top: 0;
     }
-
+    img {
+        min-width: 96vw;
+        max-width: 96vw;
+        max-height: 32vw !important;
+    }
     .nav-link {
         border-top: none;
         margin-top: 0;
         padding-top: 0;
     }
 
+    .nes-container img, .nes-container {
+        max-width: 96vw !important;
+        padding: 0vw 0vw;
+    }
 
-.connect {
-  
-    border-bottom: none;
- 
-}
+    .connect {
+        border-bottom: none;
+    }
 
-    h2 {font-size:0.8em;}
+    h2 {
+        font-size: 0.8em;
+    }
+
     .blog-right {
         border-top: none;
     }
@@ -965,6 +1000,7 @@ transform: rotate(-180deg);
     .blog-part {
         max-width: 96vw;
     }
+
     .blog {
         position: fixed;
         height: 24vh;
@@ -975,6 +1011,7 @@ transform: rotate(-180deg);
         margin: 0;
         min-height: 180px;
     }
+
     progress {
         position: relative;
         width: 96vw;
@@ -985,7 +1022,8 @@ transform: rotate(-180deg);
         margin-top: 23vh;
     }
 
-    #app {margin-top:24vh;
-          margin-bottom:1vh;
+    #app {
+        margin-top: 24vh;
+        margin-bottom: 1vh;
     }
 }
