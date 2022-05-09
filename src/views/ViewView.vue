@@ -77,7 +77,7 @@
             <div id="menu" class="blog-part desk">
                 <div class="blog-right-title-container"></div>
                 <div class="bbutton"><a class="cyan" href="https://gallery.solsunsets.com/">Solsunsets Banners</a></div>
-                <div class="bbutton desk"><a class="cyan" href="/">Pixels Claim (soon)</a></div>
+                <div class="bbutton desk"><a class="cyan" href="https://claim.solsunsets.com/">Pixels Claim</a></div>
                 <div class="bbutton desk"><a class="cyan" href="https://up.solsunsets.com/">Pixel Art Upscale Tool</a></div>
                 <div class="bbutton">Markets: <a class="cyan" href="https://www.magiceden.io/marketplace/solsunsets">MagicEden<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a> | <a href="https://alpha.art/collection/solsunsets/">Alpha.Art<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a></div>
                 <div class="bbutton desk">Sci-fi Series:<a class="cyan" href="https://exchange.art/collections/Solsunsets%20Sci-Fi%20Series">Exchange.Art<object id="svg1" data="https://solsunsets.com/img/logo/open.svg" style="height:1em;margin-bottom:-0.2em;"></object></a></div>
