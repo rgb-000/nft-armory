@@ -1294,11 +1294,11 @@ select {
 }
 
 .pfpog, #psp, #pog  {margin-left: -260px !important;
-    margin-top: -25px;
     position: absolute;
 
 } 
-
+.pfpog {margin-top: -25px;
+}
 
 .nftdisplay {
 padding-left: calc((98vw - 250px)/2);
@@ -1308,6 +1308,7 @@ position: absolute;
 .nftpre {
     padding-left: calc((98vw - 250px)/2);
     align-items: baseline;
+    margin-bottom: 30px ;
     position: relative;
     }
 
