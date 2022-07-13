@@ -56,19 +56,28 @@
 
                         </div>
                     </div>
-                    <div ><a class="cyan" href="https://gallery.solsunsets.com/"><span class="material-symbols-outlined">
-    arrow_back_ios
-</span><span class="back_gallery">Back to the gallery to access all your Banners</span></a></div>
-                    You can also view any Solsunset banner right through the
-                    https://gallery.solsunsets.com/view/mint/ adding the token/mint address at the end of the URL (it's the same token address from MagicEden item details).
-
-
-
-                    <!--all the config stuff-->
-                    <div class="connect">
-                        <NFTViewForm :is-loading="isLoading" @submit-form="handleSubmitForm">
-                        </NFTViewForm>
+                    <div>
+                        <a class="cyan" href="https://gallery.solsunsets.com/">
+                            <span class="material-symbols-outlined">
+                                arrow_back_ios
+                            </span><span class="back_gallery">Back to the gallery to access all your Banners</span>
+                        </a>
                     </div>
+                              
+                    </div>
+                    <!--all the config stuff-->
+
+                    <div class="connect">
+
+
+
+                        <NFTViewForm :is-loading="isLoading" @submit-form="handleSubmitForm">
+                        </NFTViewForm> <div class="cbz">
+                                <input type="checkbox" class="cbz" id="cbz" checked>
+                                <label for="cbz"></label>
+                            </div>
+                    </div>
+
 
 
                 </div>
@@ -89,7 +98,7 @@
         </div>
 
         <!--per NFT display-->
-        <LoadingBar v-if="isLoading" :progress="progress" :text="text" class="my-5" />
+        <LoadingBar v-if="isLoading" :progress="progress" :text="text" class="hidden" />
         <NotifyError v-else-if="isError" class="mt-5">{{ text }}</NotifyError>
         <div v-else>
             <NFTViewCard v-for="n in NFTs" :key="n.mint" :n="n"></NFTViewCard>
@@ -97,14 +106,7 @@
 
         <!--modals-->
         <!--must sit at the very bottom-->
-        <div class="infinite-loading">
-            <infinite-loading style="color:black;" @infinite="infiniteHandler"
-                              :identifier="
-        +new Date() //needs to be something thta dynamically updates, or won't work
-      "
-                              spinner="spiral"></infinite-loading>
-        </div>
-    </div>
+   
 </template>
 
 <script lang="ts">
@@ -118,8 +120,6 @@
     import { EE, ERR_NO_NFTS } from '@/globals';
     import { INFT, INFTParams } from '@/common/helpers/types';
     import NFTViewForm from '@/components/NFTViewForm.vue';
-    import useDownload from '@/composables/download';
-    import useCopy from '@/composables/copy';
     import NotifyError from '@/components/notifications/NotifyError.vue';
     import QuestionMark from '@/components/QuestionMark.vue';
     import ModalWindow from '@/components/ModalWindow.vue';
@@ -167,7 +167,7 @@
                 updateLoading({
                     newStatus: LoadStatus.Loading,
                     newProgress: 0,
-                    maxProgress: 50,
+                    maxProgress: 100,
                     newText: 'Looking for NFTs... ETA: <1 min',
                 });
 
@@ -208,59 +208,7 @@
                 }
             };
 
-            // --------------------------------------- export
-            const { exportJSONZip } = useDownload();
-            const exportBtnText = ref(`Export ${NFTCount.value} NFTs`);
-            const disableExport = ref(false);
-            watch(NFTCount, (newCount) => {
-                exportBtnText.value = `Export ${newCount} NFTs`;
-            });
-
-            const parseParams = (): [string, string] => {
-                let returnKey: string;
-                let returnPk: string;
-                for (const [k, v] of Object.entries(fetchParams.value!)) {
-                    if (v && v instanceof Array) {
-                        returnKey = k;
-                        returnPk = v[0].toBase58(); // get the first creator
-                    } else if (v) {
-                        returnKey = k;
-                        returnPk = v.toBase58();
-                    }
-                }
-                return [returnKey!, returnPk!];
-            };
-
-            const doneExportingCallback = () => {
-                disableExport.value = false;
-                exportBtnText.value = `Export ${NFTCount.value} NFTs`;
-            };
-
-            const exportNFTs = () => {
-                disableExport.value = true;
-                exportBtnText.value = 'preparing...';
-                const allNFTs = displayedNFTs.value.concat(allFetchedNFTs.value);
-                const now = +new Date();
-                const [k, v] = parseParams();
-                exportJSONZip(allNFTs, 'mint', `${k}-${v}-${now}`, doneExportingCallback);
-            };
-
-            // --------------------------------------- sharing
-            const { copyText, setCopyText, doCopy } = useCopy();
-            setCopyText('');
-
-            const copyShareLink = async () => {
-                const host = window.location.origin;
-                if (fetchParams.value!.owner) {
-                    await doCopy(`${host}/view/address/${fetchParams.value!.owner.toBase58()}`);
-                } else if (fetchParams.value!.creator) {
-                    await doCopy(`${host}/view/creator/${fetchParams.value!.creator.toBase58()}`);
-                } else if (fetchParams.value!.updateAuthority) {
-                    await doCopy(`${host}/view/authority/${fetchParams.value!.updateAuthority.toBase58()}`);
-                } else if (fetchParams.value!.mint) {
-                    await doCopy(`${host}/view/mint/${fetchParams.value!.mint.toBase58()}`);
-                }
-            };
+           
 
             // --------------------------------------- modal
             const { registerModal, isModalVisible, showModal, hideModal } = useModal();
@@ -272,16 +220,8 @@
                 text,
                 isLoading,
                 isError,
-                exportNFTs,
                 handleSubmitForm,
                 infiniteHandler,
-                // export
-                exportBtnText,
-                disableExport,
-                // share
-                copyText,
-                copyShareLink,
-                doCopy,
                 // modal
                 isModalVisible,
                 showModal,

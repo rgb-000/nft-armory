@@ -1,29 +1,87 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Welcome to the Solsunsets Gallery Beta. Here you get ease accesss to all images from our multi asset NFT">
-
+    <meta name="description"
+        content="Welcome to the Solsunsets Gallery Beta. Here you get ease accesss to all images from our multi asset NFT">
+    <link rel="stylesheet" href="css/og.css" id="og">
+    <link rel="stylesheet" href="css/sp.css" id="sp">
     <link rel="icon" href="https://solsunsets.com/img/logo/logo-ss-m.svg" sizes="any" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Sans+Pro:wght@400;600;700;900&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Sans+Pro:wght@400;600;700;900&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <title>Solsunsets</title>
 
 
 </head>
+
 <body>
-    
+ 
     <noscript>
         <strong>
             We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
-            properly without JavaScript enabled. Please enable it to
-            continue.
+                properly without JavaScript enabled. Please enable it to
+                continue.
         </strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app">         
+    </div>  
+  
+        
     <!-- built files will be auto injected -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script>
+      
+
+function preFunction() {
+    var x = document.getElementById("mySelect").value;
+        document.getElementById("bog").innerHTML = '<img src="https://solsunsets.com/banner/og/' + x + '.png" onerror="imgError3x1(this);">';
+        document.getElementById("bsp").innerHTML = '<img  src="https://solsunsets.com/banner/' + x + '.png" onerror="imgError3x1(this);">';
+        document.getElementById("pog").innerHTML  = '<img src="https://solsunsets.com/pfp/og/' + x + '.png" onerror="imgError(this);">';
+        document.getElementById("psp").innerHTML  = '<img src="https://solsunsets.com/pfp/' + x + '.png" onerror="imgError(this);">';
+     
+}
+
+function imgError(image) {
+    image.onerror = "";
+    image.src = "https://solsunsets.com/img/none.png";
+    image.height = "0px";
+    return true;
+}
+
+function imgError3x1(image) {
+    image.onerror = "";
+    image.src = "https://solsunsets.com/img/none-3x1.png";
+    image.height = "0px";
+    return true;
+}
+        function myFunction() {
+
+            if ($('input.cbz').is(':checked')) {
+                document.styleSheets[0].disabled = true;
+                document.styleSheets[1].disabled = false;
+            }
+            else {
+                document.styleSheets[1].disabled = true;
+                document.styleSheets[0].disabled = false;
+            };                    
+        };
+        function start() {
+                myFunction();
+            }
+            window.onchange = start;
+            window.onload = start;
+    </script>
+  <div class="pr">
+    <input class="prnpt" max="4444" min="1" id="mySelect" type="number" placeholder="Solsunset #" onInput="preFunction()" >   </div> 
 </body>
+
 </html>
