@@ -128,7 +128,7 @@
         <!--per NFT display-->
         <div style="height:280px" class="desk"></div>
         <div class="nftpre" id="prev">
-            <h2 id="solscan"></h2>
+            <h2 class="title" id="solscan"></h2>
             <div class="og ssuns">
                 <p id="bog"></p>
                 <p id="pog"></p>
