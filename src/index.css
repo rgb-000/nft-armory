@@ -1041,12 +1041,15 @@ h1 {
 .connect {
     display: inline-flex;
     padding-top: 15px;
+    min-height: 66px !important;
     max-height: 66px;
+    overflow: visible;
     align-content: stretch;
     width: 100%;
     padding-bottom: 15px;
     border-bottom: 3px solid #000001;
     flex-direction: row;
+    z-index: 11111;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
@@ -1173,13 +1176,12 @@ select {
     .blog {
         position: fixed;
         overflow: hidden;
-        height: 24vh;
         border-bottom: 3px solid #000001;
         width: 96vw !important;
         background-color: #fff9ea;
         top: 0 !important;
         margin: 0;
-        max-height: 180px;
+        max-height: fit-content;
     }
 
     progress {
@@ -1294,11 +1296,9 @@ select {
 }
 
 .pfpog, #psp, #pog  {margin-left: -260px !important;
-    position: absolute;
+    position: absolute; margin-top: -15px;} 
 
-} 
-.pfpog {margin-top: -25px;
-}
+.pfpog {margin-top: -25px;}
 
 .nftdisplay {
 padding-left: calc((98vw - 250px)/2);
@@ -1310,5 +1310,6 @@ position: absolute;
     align-items: baseline;
     margin-bottom: 30px ;
     position: relative;
+    max-height: 192px;
     }
 
