@@ -690,7 +690,7 @@ a:visited {
 
 
 
-@media only screen and (min-width: 951px) {
+@media all and (min-width: 951px) {
 
     #mob,
     .mob {
@@ -716,7 +716,7 @@ a:visited {
 
 /*//////////MOBILE/////////////////////*/
 
-@media only screen and (max-width: 950px) {
+@media all and (max-width: 950px) {
 
     .memo-part {
         padding: 0 1vw;
@@ -840,16 +840,9 @@ a:visited {
 
 
     #menu {
-        position: fixed;
-        top: 2vh;
-        font-size: 1.5em;
-        right: 2vw;
-        height: 9vh;
-        background-color: #fff9ea;
-        display: grid;
-        align-content: space-between;
-        align-items: stretch;
-        justify-content: center;
+
+        display: none;
+      
     }
 
 
@@ -1110,68 +1103,80 @@ select {
 .material-symbols-outlined {
     margin-bottom: -5px !important;
 }
-@media only screen and (max-width: 1440px) {
+@media all and (max-width: 1440px) {
     .logo {visibility: hidden;}
 }
 
-@media only screen and (max-width: 950px) {
 
-   
-
-    .intro {
-        margin-top: 0;
+@media all and (max-width: 480px) {
+    #wallet, .nes-btn {
+        padding: 2px 2px;
     }
 
-    .pfpog, #psp, #pog {margin-left: -260px !important;
-        margin-top: -25px;
-        position: absolute;
-        display: none;
-    
-    } 
-        
-    .nftdisplay, .nftpre {
-    padding-left: 1vw !important;
-    margin-left: calc((84vw - 500px) /2);
-
+    body {
+        overflow-x: hidden;
     }
-    
+}
+@media all and (max-width: 950px) {
 
-    img {
 
-        max-width: 500px;
-        max-height: 192px !important;
+    .nftpre {
+        margin-top:50px;
     }
+        .intro {
+            margin-top: 0;
+        }
 
-    .nav-link {
-        border-top: none;
-        margin-top: 0;
-        padding-top: 0;
-    }
+        .pfpog, #psp, #pog {
+            margin-left: -260px !important;
+            margin-top: -25px;
+            position: absolute;
+            display: none;
+        }
 
-    .nes-container img,
-    .nes-container {
-        max-width: 500px!important;
-        padding: 0vw 0vw;
-    }
+        .nftdisplay, .nftpre {
+            padding-left: 1vw !important;
+            margin-left: calc((84vw - 500px) /2);
+        }
 
-    .connect {
-        border-bottom: none;
-    }
 
-    h2 {
-        font-size: 0.8em;
-    }
+        img {
+            max-width: 500px;
+            max-height: 192px !important;
+        }
 
-    h1 {
-        display: none;
-    }
-    .blog-right {
-        border-top: none;
-    }
+        .nav-link {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 10px;
+        }
 
-    .blog-part {
-        max-width: 96vw;
-    }
+        .nes-container img,
+        .nes-container {
+            max-width: 500px !important;
+            padding: 0vw 0vw;
+        }
+
+        .connect {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 0.8em;
+            text-align:center;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        .blog-right {
+            border-top: none;
+        }
+
+        .blog-part {
+            max-width: 96vw;
+        }
 
     .blog {
         position: fixed;
@@ -1182,134 +1187,143 @@ select {
         top: 0 !important;
         margin: 0;
         max-height: fit-content;
-    }
+        padding: 0;
 
-    progress {
-        position: relative;
-        width: 96vw;
-        background-color: cyan;
-        filter: sepia(1);
-        margin-left: 0vw;
-        max-height: 12px;
-        z-index: 10000;
-        position: fixed;
-        top:-2px;
     }
+    .pr {text-align:right;}
+
+        progress {
+            position: relative;
+            width: 96vw;
+            background-color: cyan;
+            filter: sepia(1);
+            margin-left: 0vw;
+            max-height: 12px;
+            z-index: 10000;
+            position: fixed;
+            top: -2px;
+        }
 
     #app {
         margin-top: 24vh;
-        width:96vw;
+        width: 96vw;
         align-items: center;
         margin-bottom: 1vh;
         margin-right: auto;
+        overflow-x: hidden;
     }
-}
+    }
 
-.hidden {
-    display: none;
-}
-
-
+    .hidden {
+        display: none;
+    }
 
 
 
-.cbz {
-    display: inline-flex;
-    width: 74px;
-    height: 40px;
-    background: #ddbe58;
-    margin: -17px 0px 0px 0px;
-    position: relative;
-    border-radius: 4px;
-    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-}
-
-.cbz:after {
-    color: #fff9ea;
-    position: absolute;
-    right: 10px;
-    z-index: 0;
-    font: 12px/40px 'robot mono', sans-serif;
-    font-weight: bold;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
-}
-
-.cbx:before,
-.cbz:before {
-    color: #000000;
-    position: absolute;
-    left: 10px;
-    z-index: 0;
-    font: 12px/40px 'robot mono', sans-serif;
-    font-weight: bold;
-}
 
 
-.cbz:after {
-    content: 'OG';
-}
+    .cbz {
+        display: inline-flex;
+        width: 74px;
+        height: 40px;
+        background: #ddbe58;
+        margin: -17px 0px 0px 0px;
+        position: relative;
+        border-radius: 4px;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+    }
 
-.cbz:before {
-    content: 'SP';
-}
+        .cbz:after {
+            color: #fff9ea;
+            position: absolute;
+            right: 10px;
+            z-index: 0;
+            font: 12px/40px 'robot mono', sans-serif;
+            font-weight: bold;
+            text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
+        }
+
+        .cbx:before,
+        .cbz:before {
+            color: #000000;
+            position: absolute;
+            left: 10px;
+            z-index: 0;
+            font: 12px/40px 'robot mono', sans-serif;
+            font-weight: bold;
+        }
 
 
-.cbz label {
-    display: block;
-    width: 28px;
-    height: 33px;
-    cursor: pointer;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    z-index: 1;
-    background: #fff9ea;
-    border-radius: 4px;
-    transition: all 0.4s ease;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-}
+        .cbz:after {
+            content: 'OG';
+        }
 
-.cbz input[type=checkbox] {
-    visibility: hidden;
-}
+        .cbz:before {
+            content: 'SP';
+        }
 
-.cbz input[type=checkbox]:checked+label {
-    left: 43px;
-}
 
-#ssuns, .ssuns {
-    display: inline-flex;
-    align-items: start;
-    align-content: end;
-    justify-content: space-between;
-    justify-items: start;
-    width: 700px;
-    position: inherit;
-}
+        .cbz label {
+            display: block;
+            width: 28px;
+            height: 33px;
+            cursor: pointer;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            z-index: 1;
+            background: #fff9ea;
+            border-radius: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        }
 
-.preview {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    align-content: flex-end;
-    flex-direction: row;
-}
+        .cbz input[type=checkbox] {
+            visibility: hidden;
+        }
 
-.pfpog, #psp, #pog  {margin-left: -260px !important;
-    position: absolute; margin-top: -15px;} 
+            .cbz input[type=checkbox]:checked + label {
+                left: 43px;
+            }
 
-.pfpog {margin-top: -25px;}
+    #ssuns, .ssuns {
+        display: inline-flex;
+        align-items: start;
+        align-content: end;
+        justify-content: space-between;
+        justify-items: start;
+        width: 700px;
+        position: inherit;
+    }
 
-.nftdisplay {
-padding-left: calc((98vw - 250px)/2);
-position: absolute;
-}
+    .preview {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        flex-direction: row;
+    }
 
-.nftpre {
-    padding-left: calc((98vw - 250px)/2);
-    align-items: baseline;
-    margin-bottom: 30px ;
-    position: relative;
-    max-height: 192px;
+    .pfpog, #psp, #pog {
+        margin-left: -260px !important;
+        position: absolute;
+        margin-top: -15px;
+    }
+
+    .pfpog {
+        margin-top: -25px;
+    }
+
+    .nftdisplay {
+        padding-left: calc((98vw - 250px)/2);
+        position: absolute;
+    }
+
+    .nftpre {
+        padding-left: calc((98vw - 250px)/2);
+        align-items: baseline;
+        margin-bottom: 30px;
+        position: relative;
+        max-height: 192px;
     }
 

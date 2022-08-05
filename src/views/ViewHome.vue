@@ -73,7 +73,7 @@
 
 
                         <div class="preview">
-                            <div> Connect your wallet below to have access to all Solsunsets banners of your wallet. You are able to visualise and switch between the Sunny Pack (SP) or the Original (OG) versions of your Solsunset. Also, in the search field on top,  you can find any Solsunsets of the main collection. </div>
+                            <div> Connect your wallet to have access to all Solsunsets your banners. You are able to switch between the Sunny Pack (SP) or the Original (OG) versions of your Solsunset. Also, in the search field on top,  you can find any Solsunsets of the main collection. </div>
 
                         </div>
 
