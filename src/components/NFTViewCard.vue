@@ -8,7 +8,7 @@
            
 
         </h2>
-        <div v-if="n.metadataExternal.symbol === 'SUNSSE' || n.metadataExternal.symbol == 'SUNS'">
+        <div v-if="n.metadataExternal.name.includes('Solsunsets SE') || n.metadataExternal.symbol == 'SUNS'">
             <div class="flex flex-row"> <img :alt="n.mint" :src="n.metadataExternal.properties.files[1].uri" /> </div>
         </div>
         <div v-if="n.metadataExternal.symbol === 'SSUNS'">
