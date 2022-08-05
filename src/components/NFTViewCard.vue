@@ -1,34 +1,44 @@
 <template>
 
 
-    <div v-if="n.metadataExternal.symbol === 'SSUNS' || n.metadataExternal.symbol === 'SUNSSE' || n.metadataExternal.symbol == 'SUNS'"
-        class="my-5 nes-container with-title text-xs">
+    <div v-if="n.metadataExternal.name.includes('Solsunsets SE') || n.metadataExternal.symbol == 'SUNS'"
+         class="my-5 nes-container with-title text-xs">
         <h2 class="title">
             {{ n.metadataExternal.name }} | <a v-bind:href="'https://solscan.io/token/' + n.mint" target="_blank">Solscan</a>&nbsp;
-           
+
 
         </h2>
         <div v-if="n.metadataExternal.name.includes('Solsunsets SE') || n.metadataExternal.symbol == 'SUNS'">
             <div class="flex flex-row"> <img :alt="n.mint" :src="n.metadataExternal.properties.files[1].uri" /> </div>
         </div>
-        <div v-if="n.metadataExternal.symbol === 'SSUNS'">
+
+    </div>
+
+    <div v-if="n.metadataExternal.name.includes('Solsunsets #') || n.metadataExternal.symbol == 'SUNS'"
+         class="my-5 nes-container with-title text-xs">
+        <h2 class="title">
+            {{ n.metadataExternal.name }} | <a v-bind:href="'https://solscan.io/token/' + n.mint" target="_blank">Solscan</a>&nbsp;
+
+
+        </h2>
+      
             <div id="ssuns" class="sp">
 
                 <div class="flex flex-row">
                     <img :alt="n.mint" :src="n.metadataExternal.properties.files[1].uri" />
                 </div>
-         <div class="flex flex-row">
+                <div class="flex flex-row">
                 </div>
             </div>
             <div id="ssuns" class="og">
-                <div  class="flex flex-row">
+                <div class="flex flex-row">
                     <img :alt="n.mint" :src="n.metadataExternal.properties.files[3].uri" />
-                              </div>
-           <div class="pfpog flex flex-row">
+                </div>
+                <div class="pfpog flex flex-row">
                     <img :alt="n.mint" :src="n.metadataExternal.properties.files[2].uri" />
                 </div>
             </div>
-        </div>
+   
     </div>
 </template>
 
